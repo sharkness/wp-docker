@@ -34,7 +34,7 @@ my-new-project
 
 From your project dir `my-new-project`
 
-`docker-compose -f docker-compose-local.yml up -d`
+`docker-compose -f docker-compose-local.yml up -d --build`
 
 This will build your project. You'll now have a new directory named `wordpress-data` in your project. Your container is now running. It will remain running in the background (because of the -d switch) until you bring it down: `docker-compose -f docker-compose-local.yml down`
 
@@ -42,6 +42,22 @@ This will build your project. You'll now have a new directory named `wordpress-d
 If you have dnsmasq configured locally or your tld is defined in your `hosts` file, you can use your project name dot your local develop tld of choice. ie. `my-new-project.shark`  Otherwise, go to (`localhost`) in your browser and you'll see the WordPress install screen.
 
 ## Useful docker commands:
+
+**Update the wordpress container to :latest. This is occassionally necessary because caching.**
+
+`docker pull wordpress:latest`
+
+**Find out what docker's running and format it nicely**
+
+`docker ps -a --format "{{.Names}}\t\t{{.Status}}"`
+
+**See all of the docker containers, running or not, on your machine**
+
+`docker container ls --all`
+
+**See all of the docker images on your machine**
+
+`docker images`
 
 **To get a shell on your wordpress container:**
 
