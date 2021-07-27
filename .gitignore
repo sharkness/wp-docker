@@ -1,0 +1,4 @@
+.DS_Store
+
+# Ignore anything that lives in any dir within this one:
+**/
