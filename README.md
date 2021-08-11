@@ -83,7 +83,7 @@ If you have dnsmasq configured locally or your tld is defined in your `hosts` fi
 
 The usefulness of the additional node container comes from the fact that we want to make sure we can always access the necessary version of python. This is necessary when using the gulpfile attached to the _underscores framework, as well as our BS5 fork named _bootstrapped. 
 
-You should run this container from within your theme's directory at `my-new-project/wordpress-data/wp-content/themes/_bootstrapped
+You should run this container from within your theme's directory at `my-new-project/wordpress-data/wp-content/themes/{theme_dir}`
 
 **Get your bash shell**
 
