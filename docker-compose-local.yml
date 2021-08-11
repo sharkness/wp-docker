@@ -39,4 +39,4 @@ services:
     working_dir: /var/www/html
     restart: 'no'
     volumes:
-      - ./wordpress-data:/var/www/html:rw,cached
+      - ./wordpress-data/wp-content/themes/_bootstrapped:/var/www/html:rw,cached
